@@ -128,17 +128,17 @@ fov_circle.Filled = false
 fov_circle.Visible = false
 fov_circle.ZIndex = 999
 fov_circle.Transparency = 1
-fov_circle.Color = Color3.fromRGB(54, 57, 241)
+fov_circle.Color = Color3.fromRGB(138, 3, 3)
     
 local mouse_box = Drawing.new("Square")
 mouse_box.Visible = true 
 mouse_box.ZIndex = 999 
-mouse_box.Color = Color3.fromRGB(54, 57, 241)
+mouse_box.Color = Color3.fromRGB(138, 3, 3)
 mouse_box.Thickness = 20 
 mouse_box.Size = Vector2.new(20, 20)
 mouse_box.Filled = true 
 
-local PredictionAmount = 0.165
+local PredictionAmount = 0.165a
 
 do
     local Main = FieldOfViewBOX:AddTab("Field Of View")
@@ -149,7 +149,7 @@ do
     Main:AddToggle("Visible", {Text = "Visible"}):AddColorPicker("Color", {Default = Color3.fromRGB(54, 57, 241)}):OnChanged(function()
         fov_circle.Visible = Toggles.Visible.Value
     end)
-    Main:AddToggle("MousePosition", {Text = "Show Fake Mouse Position"}):AddColorPicker("MouseVisualizeColor", {Default = Color3.fromRGB(54, 57, 241)}):OnChanged(function()
+    Main:AddToggle("MousePosition", {Text = "Show Fake Mouse Position"}):AddColorPicker("MouseVisualizeColor", {Default = Color3.fromRGB(138, 3, 3)}):OnChanged(function()
         mouse_box.Visible = Toggles.MousePosition.Value 
     end)
     
