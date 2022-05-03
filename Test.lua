@@ -19,7 +19,6 @@ btns:Button ({text = "TP Player", flag = "button", callback = function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players:FindFirstChild(getgenv().selectedPlayer).Character:WaitForChild("HumanoidRootPart").CFrame
 end})
 
-
 for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
     if v:IsA"Model" and game.Players:FindFirstChild(v.Name) then
         table.insert(Players, (tostring(v.Name)))
@@ -72,7 +71,7 @@ btns:Button("Jewelry Store", function()
     -- Location
 end)
 
-btns:Button("Spawn Camp Roof", function()
+btns:Button("Spawn Camp Area", function()
     -- Location
 end)
 
